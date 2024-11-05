@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 40px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.key{
+    width: 250px;
+    height: 150px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+     background-color: rgb(132, 186, 228);
+     padding: 20px;
+ }
+
+.top{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.row_0{
+    margin-bottom: 10px;
+    width: 320px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: inset 1px;
+}
+#calculation{
+    min-height: 25px;
+}
+#results{
+    font-size: 30px;
+    font-weight: 700;
+    min-height: 40px;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    padding: 5px;
+    margin-top: 60px;
+    width: 340px;
+    border: outset 2px;
+    background-color: rgb(200, 200, 200);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: medium;
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: outset 1px rgb(200, 200, 200);
+}
+
+#one, #two, #three,
+#four, #five, #six,
+#seven, #eight, #nine, #zero{
+    font-weight: bold;
+}
+
+#percent, #clearResult, #clearEntry, 
+#clear, #delete, #add, #subtract, 
+#multiply, #divide, #squared, #squareRoot{
+    background-color: rgb(219, 219, 219);
+}
+
+#equal{
+    background-color:rgb(132, 186, 228);
+}

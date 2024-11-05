@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+
+    <div class="key">
+        <h2>key:</h2>
+        <ul>
+            <li>CR: clears results</li>
+            <li>CE: clears entry </li>
+            <li>C: clears everything </li>
+            <li>⌫: clears last character</li>
+        </ul>
+    </div>
+
+    
+    <div class="calc">
+
+        <div class="top">
+            <div class="row_0">
+                <p id="calculation"></p>
+            </div>
+            <div class="row_0">
+                <p id="results">0</p>
+            </div>
+        </div>
+      
+        <div class="row 1">
+            <button onclick="btnClrRslt()" id="clearResult">CR</button>     <!--clears result-->
+            <button onclick="btnClrEnt()" id="clearEntry">CE</button>       <!--clears entry-->
+            <button onclick="btnClr()" id="clear">C</button>                <!--clears all-->
+            <button onclick="btnBck()" id="delete">⌫</button>              <!--clears last entered character-->
+        </div>
+
+        <div class="row 2">
+            <button onclick="btnPrcnt()" id="percent">%</button>
+            <button onclick="btnSqr()" id="squared">
+                <i>x</i>²                   <!------------------------------makes the x italic-->
+            </button>
+            <button onclick="btnSqrRt()" id="squareRoot">
+                √<i>x</i>                   <!------------------------------makes the x italic-->
+            </button>
+            <button onclick="btnOperators('/')" id="divide">÷</button>
+        </div>
+
+        <div class="row 3">
+            <button onclick="btn('7')" id="seven">7</button>
+            <button onclick="btn('8')" id="eight">8</button>
+            <button onclick="btn('9')" id="nine">9</button>
+            <button onclick="btnOperators('*')" id="multiply">x</button>   
+        </div>
+        
+        <div class="row 4">
+            <button onclick="btn('4')" id="four">4</button>
+            <button onclick="btn('5')" id="five">5</button>
+            <button onclick="btn('6')" id="six">6</button>
+            <button onclick="btnOperators('-')" id="subtract">-</button>
+        </div>
+
+        <div class="row 5">
+            <button onclick="btn('1')" id="one">1</button>
+            <button onclick="btn('2')" id="two">2</button>
+            <button onclick="btn('3')" id="three">3</button>
+            <button onclick="btnOperators('+')" id="add">+</button>
+        </div>        
+
+        <div class="row 6">
+            <button id="none"></button>
+            <button onclick="btn('0')" id="zero">0</button>
+            <button onclick="btnOperators('.')" id="decimal">.</button>
+            <button onclick="btnEql()" id="equal">=</button>
+        </div>
+        
+    </div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
